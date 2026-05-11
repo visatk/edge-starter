@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { secureHeaders } from 'hono/secureHeaders';
+import { secureHeaders } from 'hono/secure-headers';
 import { logger } from 'hono/logger';
 import apiRouter from './routes/api';
 

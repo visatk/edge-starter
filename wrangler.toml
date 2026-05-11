@@ -1,0 +1,19 @@
+name = "edge-starter"
+main = "src/index.ts"
+compatibility_date = "2026-05-10"
+compatibility_flags = ["nodejs_compat"]
+
+# Smart Placement minimizes latency by executing the Worker close to the database
+# rather than the user, if it detects multiple backend trips.
+[placement]
+mode = "smart"
+
+# Define your KV Namespaces, D1 Databases, or R2 Buckets here
+# [[kv_namespaces]]
+# binding = "CACHE_KV"
+# id = "your-kv-id"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "prod-db"
+# database_id = "your-d1-id"
